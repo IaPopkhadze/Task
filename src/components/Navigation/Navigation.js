@@ -4,17 +4,22 @@ import { BiChevronDown } from "react-icons/bi";
 import { FiPhoneCall } from "react-icons/fi";
 import BackgroundImg from "../Assets/BackgroundImg.PNG";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useState } from "react";
+import NavigationModal from "./NavigationModal";
+
 function Navigation() {
+  const [navigationModal, setNavigationModal] = useState(true);
   return (
     <div className="navigation">
       <nav className="hamburgerNavigation">
         <ul>
-          <li>
+          <li onClick={() => setNavigationModal(true)}>
             <RxHamburgerMenu style={{ fontSize: "2rem" }} />
           </li>
           <li className="avtorization">ავტორიზაცია</li>
         </ul>
       </nav>
+      {navigationModal ? <NavigationModal  setNavigationModal={setNavigationModal}/> : null}
       <nav className="desktopNavigation">
         <ul>
           <li className="empty"></li>
