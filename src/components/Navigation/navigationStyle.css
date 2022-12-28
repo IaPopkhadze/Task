@@ -1,0 +1,96 @@
+.navigation {
+  width: 100%;
+  background-color: white;
+}
+.navigation .hamburgerNavigation {
+  display: none;
+}
+.navigation .hamburgerNavigation ul {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation .hamburgerNavigation ul li {
+  font-size: 1rem;
+}
+.navigation .hamburgerNavigation ul .avtorization {
+  background-color: var(--color1);
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 100rem;
+  font-weight: bolder;
+}
+.navigation .desktopNavigation ul {
+  margin: auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navigation .desktopNavigation ul li {
+  list-style: none;
+  cursor: pointer;
+}
+.navigation .desktopNavigation ul .hamburgerMenu {
+  visibility: hidden;
+}
+.navigation .desktopNavigation ul .fixPosition {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-weight: bold;
+}
+.navigation .desktopNavigation ul .empty {
+  background-color: var(--color1);
+  width: 80px;
+  height: 85px;
+}
+.navigation .desktopNavigation ul .avtorization {
+  background-color: var(--color1);
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 100rem;
+  font-weight: bolder;
+}
+.navigation .background_image_container {
+  width: 100%;
+  height: 230px;
+}
+.navigation .background_image_container .background_image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media screen and (max-width: 1075px) {
+  .navigation ul li {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  .navigation ul {
+    height: 70px;
+  }
+  .navigation ul .empty {
+    display: none;
+  }
+  .navigation ul #languages {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navigation .hamburgerNavigation {
+    display: block;
+  }
+  .navigation .desktopNavigation {
+    display: none;
+  }
+  .navigation .background_image_container {
+    height: 160px;
+  }
+}/*# sourceMappingURL=navigationStyle.css.map */

@@ -1,0 +1,73 @@
+.calculation {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .box_content {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    .txt {
+      font-weight: bold;
+    }
+    .amount_container {
+      width: 150px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 1.2rem;
+
+      border: 2px solid var(--color1);
+      padding: 0.2rem 1rem;
+      border-radius: 2rem;
+      background-color: rgb(56, 158, 216, 0.2);
+      .increase {
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        font-size: 1.2rem;
+      }
+      .decrease {
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .information {
+    font-weight: bold;
+    input {
+      cursor: pointer;
+    }
+  }
+  .totalAmount {
+    font-weight: bold;
+  }
+}
+@media screen and(max-width:800px) {
+  .calculation {
+    font-size: 0.8rem;
+    .box_content {
+      width: 400px;
+      .amount_container {
+        width: 120px;
+      }
+    }
+  }
+}
+@media screen and(max-width:600px) {
+  .calculation {
+    font-size: 0.8rem;
+    .box_content {
+      width: 300px;
+      .amount_container {
+        width: 100px;
+      }
+    }
+  }
+}

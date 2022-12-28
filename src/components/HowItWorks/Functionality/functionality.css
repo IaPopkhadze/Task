@@ -1,0 +1,40 @@
+.functionality {
+  display: flex;
+}
+.functionality .left_side {
+  flex: 1;
+}
+.functionality .left_side .image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.functionality .right_side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.functionality .right_side .eachText {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1075px) {
+  .functionality {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .functionality {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .functionality .right_side {
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=functionality.css.map */

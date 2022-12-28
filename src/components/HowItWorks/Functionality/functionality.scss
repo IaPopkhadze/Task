@@ -1,0 +1,40 @@
+.functionality {
+  display: flex;
+  .left_side {
+    flex: 1;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .right_side {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .eachText {
+      margin-left: 2rem;
+      margin-top: 1rem;
+    }
+  }
+}
+@media screen and(max-width:1075px) {
+  .functionality {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media screen and(max-width:800px) {
+  .functionality {
+    flex-direction: column;
+    gap: 2rem;
+    .right_side{
+      font-size: 0.7rem;
+    }
+  }
+}

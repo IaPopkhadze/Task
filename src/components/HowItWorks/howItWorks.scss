@@ -1,0 +1,46 @@
+.howItWorks {
+  width: 80%;
+  margin: 2rem auto 2rem auto;
+  height: 100vh;
+  nav {
+    margin-top: 3rem;
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .listItem {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 2px solid var(--color1);
+        color: black;
+        font-size: 0.9rem;
+        padding: 0.3rem;
+      }
+      #navbarActivation {
+        background-color: var(--color1);
+      }
+    }
+  }
+}
+@media screen and(max-width:1075px) {
+  .howItWorks {
+    h1 {
+      font-size: 1.3rem;
+    }
+  }
+}
+@media screen and(max-width:750px) {
+  .howItWorks {
+    nav {
+      ul {
+        .listItem {
+          font-size: 0.7rem;
+          padding: 0.3rem 0.2rem;
+        }
+      }
+    }
+  }
+}

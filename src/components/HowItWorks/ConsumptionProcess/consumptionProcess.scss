@@ -1,0 +1,46 @@
+.ConsumptionProcess {
+  display: flex;
+  flex-direction: row-reverse;
+  .left_side {
+    flex: 1;
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      cursor: pointer;
+    }
+  }
+  .right_side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .eachText {
+      margin-left: 2rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and(max-width:1075px) {
+  .ConsumptionProcess {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+@media screen and(max-width:800px) {
+  .ConsumptionProcess {
+    flex-direction: column;
+    gap: 0.5rem;
+    .right_side {
+      .text {
+        font-size: 0.7rem;
+      }
+      .eachText {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

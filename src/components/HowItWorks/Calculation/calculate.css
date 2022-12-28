@@ -1,0 +1,73 @@
+.calculation {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.calculation .box_content {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.calculation .box_content .txt {
+  font-weight: bold;
+}
+.calculation .box_content .amount_container {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+  border: 2px solid var(--color1);
+  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+  background-color: rgba(56, 158, 216, 0.2);
+}
+.calculation .box_content .amount_container .increase {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-size: 1.2rem;
+}
+.calculation .box_content .amount_container .decrease {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-size: 1.2rem;
+}
+.calculation .information {
+  font-weight: bold;
+}
+.calculation .information input {
+  cursor: pointer;
+}
+.calculation .totalAmount {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .calculation {
+    font-size: 0.8rem;
+  }
+  .calculation .box_content {
+    width: 400px;
+  }
+  .calculation .box_content .amount_container {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .calculation {
+    font-size: 0.8rem;
+  }
+  .calculation .box_content {
+    width: 300px;
+  }
+  .calculation .box_content .amount_container {
+    width: 100px;
+  }
+}/*# sourceMappingURL=calculate.css.map */
