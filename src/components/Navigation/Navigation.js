@@ -8,7 +8,7 @@ import { useState } from "react";
 import NavigationModal from "./NavigationModal";
 
 function Navigation() {
-  const [navigationModal, setNavigationModal] = useState(true);
+  const [navigationModal, setNavigationModal] = useState(false);
   return (
     <div className="navigation">
       <nav className="hamburgerNavigation">
